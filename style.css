@@ -1,0 +1,108 @@
+:root {
+  /* color */
+  --white-color: white;
+  --lightgray-color: rgb(206, 206, 206);
+  --gray-color: rgb(112, 112, 124) 0%;
+  --darkPink-color: rgb(158, 82, 123) 35%;
+  --darkSkyblue-color: rgb(100, 154, 165) 100%;
+
+  /* padding & margin */
+  --base-padding: 20px 20px;
+  --icon-padding: 10px;
+  --friendList-padding: 40px;
+
+  /* font size */
+  --icon-size: 20px;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    var(--gray-color),
+    var(--darkPink-color),
+    var(--darkSkyblue-color)
+  );
+}
+
+/* 삭제할 예정 */
+.profile {
+  width: 30px;
+  height: 30px;
+}
+
+/* navigator */
+.navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--base-padding);
+  height: 10vh;
+}
+
+.navigator .icons i {
+  padding-right: var(--icon-padding);
+  font-size: var(--icon-size);
+  color: var(--white-color);
+}
+
+.navigator .profile {
+  height: 100%;
+}
+
+/* main */
+.main {
+  display: flex;
+  padding: 0px 40px;
+}
+
+/* firendsList */
+.main .friendsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .friendsList .online,
+.main .friendsList .offline {
+  display: flex;
+  flex-direction: column;
+  margin: var(--base-padding);
+}
+
+.friendsList .title {
+  display: flex;
+  flex-direction: row;
+}
+
+.friendsList .title span {
+  padding-right: var(--icon-padding);
+  padding-bottom: var(--icon-padding);
+}
+
+.friendsList .title .titleText {
+  color: var(--lightgray-color);
+}
+
+.friendsList .title .count {
+  color: var(--white-color);
+  font-weight: 900;
+}
+
+.friendsList .lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.friendsList .lists .list {
+  display: flex;
+  align-items: center;
+  padding: calc(var(--icon-padding) / 2);
+}
+
+.lists .list .profile {
+  padding-right: var(--icon-padding);
+}
+
+.lists .list .name {
+  color: var(--white-color);
+}

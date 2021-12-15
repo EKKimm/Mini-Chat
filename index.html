@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
@@ -19,123 +19,147 @@
         <i class="fas fa-bars"></i>
       </div>
 
-      <img class="profile" src="images/sample_profile.jpeg" alt="My profile" />
+      <img class="profile" src="images/yumi.jpg" alt="My profile" />
     </nav>
 
-    <!-- Friends list -->
-    <section class="friendsList">
-      <!-- online list -->
-      <div class="online">
-        <div class="title">
-          <span class="titleText">Online</span>
-          <span class="count">6</span>
+    <section class="main">
+      <!-- Friends list -->
+      <section class="friendsList">
+        <!-- online list -->
+        <div class="online">
+          <div class="title">
+            <span class="titleText">Online</span>
+            <span class="count">6</span>
+          </div>
+          <div class="lists">
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+          </div>
         </div>
-        <div class="lists">
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- offline list -->
-      <div class="offline">
-        <div class="title">
-          <span class="titleText">Offline</span>
-          <span class="count">10</span>
+        <!-- offline list -->
+        <div class="offline">
+          <div class="title">
+            <span class="titleText">Offline</span>
+            <span class="count">10</span>
+          </div>
+          <div class="lists">
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+            <div class="list">
+              <img class="profile" src="images/sample_profile.jpeg" />
+              <span class="name">Julien Hochgenug</span>
+            </div>
+          </div>
         </div>
-        <div class="lists">
-          <div class="list">
+
+        <!-- add more friends -->
+        <div class="addFriends">
+          <i class="fas fa-user-plus"></i>
+          <span class="text">Add more friends</span>
+        </div>
+      </section>
+
+      <!-- Chat -->
+      <section class="chatScreen">
+        <div class="chatScroll">
+          <div class="otherChat">
             <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
+            <span class="message">Hey guy! Wanna get a drink?</span>
+            <i class="fas fa-thumbs-up"></i>
           </div>
-          <div class="list">
+          <div class="myChat">
             <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
+            <span class="message"
+              >Hmm. I'm in to go for a drink this week 🍺</span
+            >
           </div>
-          <div class="list">
+          <div class="imageChat">
             <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
+            <img class="image" src="images/sample_imageChat.png" />
           </div>
-          <div class="list">
+          <div class="videoChat">
             <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
-          </div>
-          <div class="list">
-            <img class="profile" src="images/sample_profile.jpeg" />
-            <span class="name">Julien Hochgenug</span>
+            <video class="video" controls>
+              <source src="video/video.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
-      </div>
 
-      <!-- add more friends -->
-      <div class="addFriends">
-        <i class="fas fa-user-plus"></i>
-        <span class="text">Add more friends</span>
-      </div>
-    </section>
-
-    <!-- Chat -->
-    <section class="chatScreen">
-      <div class="otherChat">
-        <img class="profile" src="images/sample_profile.jpeg" />
-        <span class="message">Hey guy! Wanna get a drink?</span>
-        <i class="fas fa-thumbs-up"></i>
-      </div>
-      <div class="myChat">
-        <img class="profile" src="images/sample_profile.jpeg" />
-        <span class="message">Hmm. I'm in to go for a drink this week 🍺</span>
-      </div>
-      <div class="imageChat">
-        <img class="profile" src="images/sample_profile.jpeg" />
-        <img class="image" src="images/sample_imageChat.png" />
-      </div>
-      <div class="videoChat">
-        <img class="profile" src="images/sample_profile.jpeg" />
-        <video class="video" controls>
-          <source src="video/video.mp4" type="video/mp4" />
-        </video>
-      </div>
+        <div class="myInputField">
+          <div class="messageBar">
+            <input
+              class="messageInput"
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="1"
+            />
+            <div class="icons">
+              <i class="fas fa-images"></i>
+              <i class="fas fa-video"></i>
+            </div>
+            <img class="profile" src="images/sample_profile.jpeg" />
+          </div>
+        </div>
+      </section>
     </section>
   </body>
 </html>
