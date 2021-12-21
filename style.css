@@ -5,6 +5,9 @@
   --gray-color: rgb(112, 112, 124) 0%;
   --darkPink-color: rgb(158, 82, 123) 35%;
   --darkSkyblue-color: rgb(100, 154, 165) 100%;
+  --darkPink-color: rgb(158, 82, 123) 35%;
+  --lightPink-color: rgb(255, 85, 176) 35%;
+  --lightSkyblue-color: rgb(114, 229, 250) 100%;
 
   /* padding & margin */
   --base-padding: 20px 20px;
@@ -13,6 +16,8 @@
 
   /* font size */
   --icon-size: 20px;
+  --friendsList-size: 300px;
+  --chatImage-size: 300px;
 }
 
 body {
@@ -22,6 +27,13 @@ body {
     var(--darkPink-color),
     var(--darkSkyblue-color)
   );
+}
+
+button {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  cursor: pointer;
 }
 
 /* 삭제할 예정 */
@@ -40,7 +52,7 @@ body {
   height: 10vh;
 }
 
-.navigator .icons i {
+.navigator .icons button {
   padding-right: var(--icon-padding);
   font-size: var(--icon-size);
   color: var(--white-color);
@@ -54,12 +66,22 @@ body {
 .main {
   display: flex;
   padding: 0px 40px;
+  /*
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  */
 }
 
 /* firendsList */
 .main .friendsList {
   display: flex;
   flex-direction: column;
+  /*
+  min-width: var(--friendsList-size);
+  max-width: var(--friendsList-size);
+  */
+  flex: 1 1 30%;
 }
 
 .main .friendsList .online,
@@ -105,4 +127,102 @@ body {
 
 .lists .list .name {
   color: var(--white-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.main .friendsList .addFriends {
+  margin: 5px 40px;
+  border: solid;
+  border-radius: 40px;
+  border-color: var(--white-color);
+  border-width: 2px;
+  height: 50px;
+}
+
+.friendsList .addFriends i {
+  color: var(--white-color);
+  margin: 10px;
+}
+
+.friendsList .addFriends .text {
+  color: var(--white-color);
+}
+
+.main .chatScreen {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 70%;
+}
+
+.chatScreen .chatScroll .otherChat > *,
+.chatScreen .chatScroll .myChat > *,
+.chatScreen .chatScroll .imageChat > *,
+.chatScreen .chatScroll .videoChat > * {
+  margin: 0px 5px;
+}
+
+.chatScreen .chatScroll .otherChat,
+.chatScreen .chatScroll .imageChat,
+.chatScreen .chatScroll .videoChat {
+  display: flex;
+  justify-content: flex-start;
+  margin: 15px 0px;
+}
+
+.chatScreen .chatScroll .myChat {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 15px 0px;
+}
+
+.chatScroll .profile {
+  display: flex;
+  align-self: flex-start;
+}
+
+.chatScroll .myChat .profile {
+  display: flex;
+  align-self: flex-end;
+}
+
+.chatScroll .otherChat .message {
+  padding: var(--base-padding);
+  border-radius: 20px;
+  background: linear-gradient(
+    60deg,
+    var(--lightPink-color),
+    var(--lightSkyblue-color)
+  );
+}
+
+.chatScroll .otherChat .thumbsUp {
+  display: flex;
+  align-items: flex-end;
+  font-size: var(--icon-size);
+}
+
+.chatScroll .myChat .message {
+  padding: var(--base-padding);
+  border-radius: 20px;
+  background: linear-gradient(
+    60deg,
+    var(--gray-color),
+    var(--lightSkyblue-color)
+  );
+}
+
+.chatScroll .imageChat .image img {
+  width: 100%;
+  height: 100%;
+  max-width: var(--chatImage-size);
+}
+
+.chatScroll .videoChat .video {
+  width: 100%;
+  height: 100%;
+  max-width: var(--chatImage-size);
 }

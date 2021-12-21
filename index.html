@@ -15,8 +15,12 @@
     <!-- Navigator -->
     <nav class="navigator">
       <div class="icons">
-        <i class="fas fa-cat"></i>
-        <i class="fas fa-bars"></i>
+        <button class="homeButton" type="button">
+          <i class="fas fa-cat"></i>
+        </button>
+        <button class="hamburgerButton" type="button">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
 
       <img class="profile" src="images/yumi.jpg" alt="My profile" />
@@ -110,10 +114,10 @@
         </div>
 
         <!-- add more friends -->
-        <div class="addFriends">
+        <button class="addFriends">
           <i class="fas fa-user-plus"></i>
           <span class="text">Add more friends</span>
-        </div>
+        </button>
       </section>
 
       <!-- Chat -->
@@ -122,7 +126,7 @@
           <div class="otherChat">
             <img class="profile" src="images/sample_profile.jpeg" />
             <span class="message">Hey guy! Wanna get a drink?</span>
-            <i class="fas fa-thumbs-up"></i>
+            <button class="thumbsUp">👍</button>
           </div>
           <div class="myChat">
             <img class="profile" src="images/sample_profile.jpeg" />
@@ -132,7 +136,9 @@
           </div>
           <div class="imageChat">
             <img class="profile" src="images/sample_profile.jpeg" />
-            <img class="image" src="images/sample_imageChat.png" />
+            <div class="image">
+              <img src="images/sample_imageChat.png" />
+            </div>
           </div>
           <div class="videoChat">
             <img class="profile" src="images/sample_profile.jpeg" />
